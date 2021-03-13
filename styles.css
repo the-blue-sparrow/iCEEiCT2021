@@ -2,15 +2,30 @@
     font-size: 15px;
    
     text-align:center;
-    width:130px;
-  border:2px solid white; 
+ 
+ 
+
+
     
+}.button{
+  width:110px;
+  border-radius:10px;
+  background-color: rgba(0, 128, 0, 0.694);
+  
+}
+.navbar-nav li{
+margin-left: 8px;
+margin-right: 8px;
+}
+.nav-link{
+  color:white;
 }
 .event_date{
     color:green;
     font-size: 20px;
    
 }
+
 .banner{
   
 
@@ -30,27 +45,45 @@ position:relative;
 
 
 }
+.footer{
+  background-image: url("bottombar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  display:block;
+  padding-top:50px;
+  color:white;
+}
+
+@font-face{
+font-family: 'myfont';
+src:url("Arial\ regular.ttf");
+
+}
 .main-text {
   
  
   position: absolute;
  
-  top:250px;
+  top:160px;
  
-  color:white;
+  color: green;
 }
 .entry-meta i{
 color:green;
 
 }
 h1{
-  font-size:30px;
+  font-size:20px;
+  font-family: 'myfont';
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.816);
 }
 h{
   color:black;
   
 }
-.nav-item a:hover{
+.button:hover{
     background-color: yellowgreen;
 
 }
@@ -140,18 +173,7 @@ div.scroll-up {
   a:active{
     color:white;
   }
-  .footer{
-   
-    text-align:justify;
-   color:white;
-   height: auto;
-    min-width:100%;
-    padding-top:50px;
-    display:block;
-    background-size: cover;
-     
-      background:green;
-  }
+  
  
   h1 {
     animation: move 3s;
@@ -186,9 +208,9 @@ div.scroll-up {
  height: 50px;	
  overflow: hidden;
  position: relative;
- background:yellowgreen;
+ background-color: rgba(8, 8, 8, 0.802) ;
  color: white;
- border: 1px solid rgb(213, 205, 191);
+
  display:block;
 }
 .marquee p {
