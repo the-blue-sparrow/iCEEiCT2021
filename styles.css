@@ -1,14 +1,14 @@
 .nav-item{
     font-size: 15px;
-   
+   width:100%;
     text-align:center;
- float: right;
+
  
 
 
     
 }.button{
-  width:120px;
+  width:auto;
   border-radius:10px;
   background-color: rgba(0, 128, 0, 0.694);
   
@@ -46,14 +46,18 @@ position:relative;
 
 
 }
+.card{
+  display:block;
+}
 .footer{
   background-image: url("bottombar.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width:100%;
   display:block;
-  padding-top:50px;
+  padding-top:30px;
   color:white;
 }
 
