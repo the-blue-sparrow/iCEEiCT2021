@@ -2,21 +2,21 @@
     font-size: 15px;
    width:100%;
     text-align:center;
-    
+
 
  
 
 
     
 }
-.nav-item{
-  float:right;
-}
+
 
 .button{
   width:100px;
-  border-radius:10px;
-  background-color: rgba(172, 255, 47, 0.816);
+  border-radius:26px;
+  border-color:#04012e;
+  /* background-color: rgba(172, 255, 47, 0.816); */
+  background-color: white;
   
 }
 .navbar-nav li{
@@ -24,11 +24,7 @@
 margin-left: 10px;
 margin-right: 10px;
 }
-.nav-link{
 
-  float:right;
-
-}
 .navbar-nav{
   float: right;
 }
@@ -36,17 +32,17 @@ margin-right: 10px;
   display:block;
 }
 .event_date{
-    color:green;
+    color:#04012e;
     font-size: 20px;
    
 }
 .card-footer{
   border-radius: 0.5;
-  border-color:green;
+
 }
 .card-body{
-  border-color:green;
-  background-color: green;
+ 
+  background-color: #04012e;
   color:white;
 }
 
@@ -57,17 +53,21 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 background-position: center center;
-width: 100%;
+width: auto;
 height: auto;
 margin:0;
 padding:0px;
 display:block;
+
 
 position:relative;
 
 
 
 
+}
+html{
+  display:block;
 }
 .card{
   background-size: 100% 100%;
@@ -99,19 +99,19 @@ src:url("Arial\ regular.ttf");
 }
 .main-text {
   
- 
+ text-align:justify;
   position: absolute;
  
-  top:160px;
+  top:200px;
  
-  color: green;
+  color: #04012e;
 }
 .entry-meta i{
-color:green;
+color:#04012e;
 
 }
 h1{
-  font-size:20px;
+  font-size:150%;
   font-family: 'myfont';
 text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.816);
 }
@@ -119,8 +119,13 @@ h{
   color:black;
   
 }
+.button{
+  height:40px;
+  color:#04012e;
+}
 .button:hover{
-    background-color: green;
+    background-color: #04012e;
+   color: white;
 
 }
 
@@ -148,17 +153,30 @@ section{
 body{
     overflow-x: hidden;
     text-align: justify;
+    border:none;
 
 
 }
 
 
-@media only screen and  (max-width: 747px){
+@media only screen and (max-width: 747px){
   .custom-logo-link{
 display:none;
 
 }
 }
+/* @media only screen and (max-width: 992px){
+  .custom-logo-item{
+
+display:none;
+}
+}
+@media only screen and (max-width: 1200px){
+  .custom-logo-item{
+
+display:none;
+}
+} */
 div.scroll-up {
 
    height: 350px;	
