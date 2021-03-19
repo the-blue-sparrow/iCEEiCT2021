@@ -2,13 +2,19 @@
     font-size: 15px;
    width:100%;
     text-align:center;
+    
 
  
 
 
     
-}.button{
-  width:auto;
+}
+.nav-item{
+  float:right;
+}
+
+.button{
+  width:100px;
   border-radius:10px;
   background-color: rgba(172, 255, 47, 0.816);
   
@@ -19,8 +25,15 @@ margin-left: 10px;
 margin-right: 10px;
 }
 .nav-link{
-  color:white;
 
+  float:right;
+
+}
+.navbar-nav{
+  float: right;
+}
+.card{
+  display:block;
 }
 .event_date{
     color:green;
@@ -57,18 +70,26 @@ position:relative;
 
 }
 .card{
-  display:block;
+  background-size: 100% 100%;
 }
+
 .footer{
+
   background-image: url("bottombar.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+margin:0 auto;
+
   background-attachment: fixed;
-  width:100%;
+  max-width:100%;
+  height:auto;
+  
   display:block;
   padding-top:30px;
   color:white;
+
+  overflow:hidden;
 }
 
 @font-face{
@@ -99,7 +120,7 @@ h{
   
 }
 .button:hover{
-    background-color: yellowgreen;
+    background-color: green;
 
 }
 
@@ -130,13 +151,13 @@ body{
 
 
 }
-@media (max-width: 640px)
-{
-    
-}
 
-@media (max-width: 991px){
-    
+
+@media only screen and  (max-width: 747px){
+  .custom-logo-link{
+display:none;
+
+}
 }
 div.scroll-up {
 
