@@ -68,6 +68,8 @@ position:relative;
 }
 html{
   display:block;
+  
+  text-align: justify;
 }
 .card{
   background-size: 100% 100%;
@@ -85,7 +87,7 @@ margin:0 auto;
   max-width:100%;
   height:auto;
   
-  display:block;
+  display:inline-block;
   padding-top:30px;
   color:white;
 
@@ -101,7 +103,7 @@ src:url("Arial\ regular.ttf");
   
  text-align:justify;
   position: absolute;
- 
+ padding-left:2%;
   top:200px;
  
   color: #04012e;
@@ -109,6 +111,9 @@ src:url("Arial\ regular.ttf");
 .entry-meta i{
 color:#04012e;
 
+}
+.img{
+  width:100%;
 }
 h1{
   font-size:150%;
