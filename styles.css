@@ -12,7 +12,7 @@
 
 
 .button{
-  width:100px;
+  width:97%;
   border-radius:26px;
   border-color:#04012e;
   /* background-color: rgba(172, 255, 47, 0.816); */
@@ -191,7 +191,7 @@ div.scroll-up {
    color: orange;
    font-size:18px;
    
-  
+  width:100%;
   }
   div.scroll-up ul {
   text-align:left;
