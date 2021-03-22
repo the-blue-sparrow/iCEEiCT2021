@@ -77,7 +77,7 @@ html{
 
 .footer{
 overflow-wrap:break-word;
-  background-image: url("bottombar.png");
+  background-image: url("../images/bottombar.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
