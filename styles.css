@@ -66,6 +66,17 @@ position:relative;
 
 
 }
+
+   
+  /* Clearfix (clear floats) */
+  .u .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
 html{
   display:block;
   
