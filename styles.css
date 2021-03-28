@@ -174,13 +174,7 @@ section{
  
 
 }
-body{
-    overflow-x: hidden;
-    text-align: justify;
-    border:none;
 
-
-}
 
 
 @media only screen and (max-width: 747px){
