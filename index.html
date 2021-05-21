@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Welcome- ICEEICT</title>
 </head>
 <style>
@@ -52,6 +54,188 @@
     /* Show the dropdown menu on hover */
     .nav-item:hover .dropdown-content {
         display: block;
+    }
+
+
+    /* Calender */
+    .date-card {
+        width: 25rem;
+    }
+
+    .datestamp {
+        width: 4rem;
+    }
+
+    .datestamp *:not(.sr-only) {
+        display: block;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+
+    .datestamp .datestamp-month {
+        background-color: black;
+        color: white;
+        position: relative;
+    }
+
+    .datestamp .datestamp-month abbr {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .datestamp .datestamp-day {
+        color: #1f7bc1;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .datestamp.small {
+        width: 3rem;
+    }
+
+    .datestamp.small *:not(.sr-only) {
+        font-size: 0.875rem;
+    }
+
+    .datestamp.small .datestamp-day {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .date-summary .date-time,
+    .date-card .date-time,
+    .date-summary .date-location,
+    .date-card .date-location {
+        padding-left: 1.5rem;
+        position: relative;
+    }
+
+    .date-summary .date-time::before,
+    .date-card .date-time::before,
+    .date-summary .date-location::before,
+    .date-card .date-location::before {
+        color: rgba(0, 0, 0, 0.4);
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 1rem;
+    }
+
+    .date-summary .date-time::before,
+    .date-card .date-time::before {
+        content: "\f017";
+    }
+
+    .date-summary .date-location::before,
+    .date-card .date-location::before {
+        content: "\f3c5";
+    }
+
+    .date-card {
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.25s;
+    }
+
+    .date-card:hover {
+
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.25s;
+
+
+    }
+
+
+    .date-card .datestamp,
+    .date-card .date-body {
+        position: relative;
+        z-index: 2;
+    }
+
+    .date-card.js-date-clickthrough:hover {
+        border-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .date-card.js-date-clickthrough:hover::before {
+        transform: scale(4);
+    }
+
+
+    /*Social media  icons */
+
+    .social_links {
+        padding: 1rem;
+        background: #383838;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social_links .combo {
+        transform: scale(0.9);
+        transition: 0.4s ease-in;
+        margin: 0 0.5rem;
+        height: 3em;
+        width: 3em;
+        line-height: 3em;
+    }
+
+    .combo .circle {
+        color: #f9f9f9;
+        transition: 0.4s ease-in;
+        font-size: 3em;
+    }
+
+    .combo .icon {
+        color: #444343;
+        font-size: 2rem;
+        transform: translateY(1px);
+        transition: 0.2s ease-in;
+    }
+
+    .combo:hover {
+        transform: scale(1.1);
+    }
+
+    .combo:hover,
+    .combo:hover .icon {
+        color: white;
+    }
+
+    .ig:hover,
+    .ig:hover .circle {
+        color: #e91e63;
+    }
+
+    .fb:hover,
+    .fb:hover .circle {
+        color: #2196f3;
+    }
+
+    .yt:hover,
+    .yt:hover .circle {
+        color: #f44336;
+    }
+
+    .tw:hover,
+    .tw:hover .circle {
+        color: #8f5db7;
+    }
+
+    .gt:hover,
+    .gt:hover .circle {
+        color: #1f1f1f;
     }
 </style>
 
@@ -338,91 +522,157 @@
 
 
                         <h class="section_h"
-                            style="font-family: 'myfont'; text-align:JUSTIFY; color:#04012e; font-size:30px;">
-                            <b>EVENTS</b>
+                            style="font-family: 'myfont'; text-align:JUSTIFY; color:#04012e; font-size:25px;">
+                            <b>IMPORTANT DATES</b>
+                            <hr>
                         </h>
-                        <br>
+
+
+
 
                         <div class="spost clearfix">
                             <div class="entry-image">
                                 <div class="event_date" style="font-family: 'myfont'; ">
-                                    <span class="date">10</span>
-                                    <span class="month">Mar</span>
-                                </div>
-                            </div>
-                            <div class="entry-c">
-                                <div class="entry-title col-sm-12" style="font-family: 'myfont'; ">
-                                    <h><a href="/notice/payment-of-academic-fees-for-supplementary-exam-2021">Payment of
-                                            Academic Fees for supplementary Exam 2021</a></h>
-                                </div>
-                                <ul class="entry-meta">
-                                    <i class="fa fa-calendar"></i> 10th Mar 2021
+                                    <!--<span class="date">Submission Deadline</span>-->
 
-                                </ul>
+                                    <!-- Important date card -->
+                                    <div class="card date-card d-flex flex-row">
+                                        <div class="datestamp small m-3">
+                                            <span class="datestamp-month badge rounded-0">
+                                                <abbr title="November">Aug</abbr>
+                                            </span>
+                                            <span class="datestamp-day py-1">14</span><span class="sr-only">,</span>
+                                            <span
+                                                class="datestamp-year badge text-muted border-top border-grey">2021</span>
+                                        </div>
+                                        <div class="date-body border-left p-4">
+
+                                            <h5 class="h5 font-weight-bold date-title mt-4 ml-3">Submission Deadline
+                                            </h5>
+                                            <!--- <div class="date-description">
+                                                <p>Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Velit
+                                                    <a href="#">sed ullamcorper</a> morbi tincidunt ornare massa eget
+                                                    egestas purus.</p>
+                                            </div>
+                                        -->
+                                        </div>
+                                    </div>
+                                    <!-- Important date card -->
+
+
+                                </div>
                             </div>
+
                         </div>
                         <hr>
                         <!--Notice Item End-->
                         <div class="spost clearfix">
                             <div class="entry-image">
                                 <div class="event_date">
-                                    <span class="date"> 07</span>
-                                    <span class="month">Mar</span>
-                                </div>
-                            </div>
-                            <div class="entry-c">
-                                <div class="entry-title col-sm-12">
-                                    <h><a
-                                            href="/notice/list-of-eligible-applicants-for-m-sc-engg-m-engg-written-admission-test">List
-                                            Of Eligible Applicants For M.Sc.Engg. / M.Engg. Written Admission Test</a>
-                                    </h>
-                                </div>
-                                <ul class="entry-meta">
-                                    <i class="fa fa-calendar"></i> 7th Mar 2021
+                                    <!--<span class="date"> Result Notification</span>-->
 
-                                </ul>
+
+                                    <!-- Important date card -->
+                                    <div class="card date-card d-flex flex-row">
+                                        <div class="datestamp small m-3">
+                                            <span class="datestamp-month badge rounded-0">
+                                                <abbr title="November">Sep</abbr>
+                                            </span>
+                                            <span class="datestamp-day py-1">30</span><span class="sr-only">,</span>
+                                            <span
+                                                class="datestamp-year badge text-muted border-top border-grey">2021</span>
+                                        </div>
+                                        <div class="date-body border-left p-4">
+
+                                            <h5 class="h5 font-weight-bold date-title mt-4 ml-3">Result Notification
+                                            </h5>
+                                            <!--- <div class="date-description">
+                <p>Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Velit
+                    <a href="#">sed ullamcorper</a> morbi tincidunt ornare massa eget
+                    egestas purus.</p>
+            </div>
+        -->
+                                        </div>
+                                    </div>
+                                    <!-- Important date card -->
+
+
+
+                                </div>
                             </div>
+
                         </div>
                         <hr>
                         <!--Notice Item End-->
                         <div class="spost clearfix">
                             <div class="entry-image">
                                 <div class="event_date">
-                                    <span class="date"> 04</span>
-                                    <span class="month">Mar</span>
-                                </div>
-                            </div>
-                            <div class="entry-c">
-                                <div class="entry-title col-sm-12">
-                                    <h><a href="/notice/book-deposit-schedule-t-1-t-2-2020">Book Deposit Schedule T-1
-                                            &amp; T-2, 2020</a></h>
-                                </div>
-                                <ul class="entry-meta">
-                                    <i class="fa fa-calendar"></i> 4th Mar 2021
+                                    <!--<span class="date"> Camerea-ready Deadline</span>-->
 
-                                </ul>
+                                    <!-- Important date card -->
+                                    <div class="card date-card d-flex flex-row">
+                                        <div class="datestamp small m-3">
+                                            <span class="datestamp-month badge rounded-0">
+                                                <abbr title="November">Oct</abbr>
+                                            </span>
+                                            <span class="datestamp-day py-1">16</span><span class="sr-only">,</span>
+                                            <span
+                                                class="datestamp-year badge text-muted border-top border-grey">2021</span>
+                                        </div>
+                                        <div class="date-body border-left p-4">
+
+                                            <h5 class="h5 font-weight-bold date-title mt-4 ml-3">Camera-ready Deadline
+                                            </h5>
+                                            <!--- <div class="date-description">
+       <p>Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Velit
+<a href="#">sed ullamcorper</a> morbi tincidunt ornare massa eget
+egestas purus.</p>
+</div>
+-->
+                                        </div>
+                                    </div>
+                                    <!-- Important date card -->
+
+
+                                </div>
                             </div>
+
                         </div>
                         <hr>
                         <!--Notice Item End-->
                         <div class="spost clearfix">
                             <div class="entry-image">
                                 <div class="event_date">
-                                    <span class="date"> 14</span>
-                                    <span class="month">Feb</span>
-                                </div>
-                            </div>
-                            <div class="entry-c">
-                                <div class="entry-title col-sm-12">
-                                    <h><a
-                                            href="/notice/tuition-fees-reduction-and-refixation-due-to-impact-of-covid-19">Tuition
-                                            Fees Reduction and Refixation Due to Impact of Covid -19</a></h>
-                                </div>
-                                <ul class="entry-meta">
-                                    <i class="fa fa-calendar"></i> 14th Feb 2021
+                                    <!--<span class="date"> Registration Deadline</span>-->
 
-                                </ul>
+                                    <!-- Important date card -->
+                                    <div class="card date-card d-flex flex-row">
+                                        <div class="datestamp small m-3">
+                                            <span class="datestamp-month badge rounded-0">
+                                                <abbr title="November">Oct</abbr>
+                                            </span>
+                                            <span class="datestamp-day py-1">30</span><span class="sr-only">,</span>
+                                            <span
+                                                class="datestamp-year badge text-muted border-top border-grey">2021</span>
+                                        </div>
+                                        <div class="date-body border-left p-4">
+
+                                            <h5 class="h5 font-weight-bold date-title mt-4 ml-3">Registration Deadline
+                                            </h5>
+                                            <!--- <div class="date-description">
+<p>Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Velit
+<a href="#">sed ullamcorper</a> morbi tincidunt ornare massa eget
+egestas purus.</p>
+</div>
+-->
+                                        </div>
+                                    </div>
+                                    <!-- Important date card -->
+
+
+                                </div>
                             </div>
+
                         </div>
 
 
@@ -878,9 +1128,46 @@
 
                     </li>
 
+                    <!--- Social Media icons -->
+
+
+                    <div class="social_links">
+
+                        <a href="https://www.facebook.com/iceeict">
+                            <span class="fa-stack fa-lg fb combo">
+                                <i class="fa fa-circle fa-stack-2x circle"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
+                            </span>
+                        </a>
+                        <a href="mailto:someone@yoursite.com">
+                            <span class="fa-stack fa-lg yt combo">
+                                <i class="fa fa-circle fa-stack-2x circle"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse icon"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-lg tw combo">
+                                <i class="fa fa-circle fa-stack-2x circle"></i>
+                                <i class="fab fa-viber fa-stack-1x fa-inverse icon"></i>
+                            </span>
+                        </a>
+
+
+                    </div>
+
 
                 </ul>
             </div>
+
+
+
+
+
+
+
+
+
+
             <div class="col-sm-12 col-md-3" style="padding-left:50px">
                 <h3 style=" color:white">Contact Us</h3>
                 <br>
