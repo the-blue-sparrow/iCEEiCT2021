@@ -907,31 +907,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script>
-        $(window).scroll(function() {
-            var y = $(this).scrollTop();
-            $('.link').each(function(event) {
-                var position = $($(this).attr('href')).offset().top;
-                var a = $($(this).attr('href')).height();
-                if (y >= position && y <= position + a) {
-                    $(this).addClass('active');
-                } else {
-                    $(this).removeClass('active');
-                }
-            });
-        });
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 600);
-                return false;
-              }
+        $(".nav").affix({
+            offset:{
+                top:100
             }
-          });
-        })
+        });
+        $(".nav button").click(function(){
+            alert($(document).height())
+
+        });
     </script>
 </body>
 
