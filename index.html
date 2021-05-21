@@ -238,17 +238,46 @@
         color: #1f1f1f;
     }
 
-    /*Image responsive*/
+    /*Mobile Device*/
 
 
-    @media (max-width: 768px) {
+<<<<<<< HEAD
+=======
+
+    /*Flickering Fix*/
+
+>>>>>>> 00d9e5154d83a910264e02b028bd0abcf73e9a02
+    @media (max-width: 979px) {
         .navbar {
-            position: absolute;
+            position: fixed;
+
         }
-        
-        
-    }
-    
+
+
+
+        @media (max-width: 768px) {
+
+            .date-card {
+                box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+                width: 90%;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.25s;
+            }
+
+            .date-card:hover {
+
+                box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+                width: 90%;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.25s;
+
+
+            }
+
+
+        }
 </style>
 
 <body style="font-family: 'myfont'; ">
