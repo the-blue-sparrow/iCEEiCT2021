@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="flipdown/src/flipdown.css">
+
     <!-- <link rel="stylesheet" href="styles/stylesheet.css"> -->
     <title>Important Dates</title>
 </head>
@@ -354,13 +356,14 @@
             <div class="row">
 
                 <div class="col-xs-12 col-sm-6">
+                    <br>
                     <div class="box">
 
                         <!-- Important date card -->
                         <div class="card date-card d-flex flex-row">
                             <div class="datestamp small m-3">
                                 <span class="datestamp-month badge rounded-0">
-                                    <abbr title="November">Aug</abbr>
+                                    <abbr title="">Aug</abbr>
                                 </span>
                                 <span class="datestamp-day py-1">14</span><span class="sr-only">,</span>
                                 <span class="datestamp-year badge text-muted border-top border-grey">2021</span>
@@ -382,15 +385,50 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box">
 
+                <br>
+
+                <br>
+
+
+
+
+
+
+                <div class="col-xs-12 col-sm-6">
+
+
+                    <div id="submission_deadline" class="flipdown"></div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6">
+
+                    <br>
+
+                    <div class="box">
 
                         <!-- Important date card -->
                         <div class="card date-card d-flex flex-row">
                             <div class="datestamp small m-3">
                                 <span class="datestamp-month badge rounded-0">
-                                    <abbr title="November">Sep</abbr>
+                                    <abbr title="">Sep</abbr>
                                 </span>
                                 <span class="datestamp-day py-1">30</span><span class="sr-only">,</span>
                                 <span class="datestamp-year badge text-muted border-top border-grey">2021</span>
@@ -411,38 +449,46 @@
 
 
                     </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+
+                    <div id="result_notification" class="flipdown"></div>
+
                 </div>
 
             </div>
         </div>
 
 
-        <br>
-        <br>
-        <br>
-        <br>
 
 
 
-
+        <br>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
 
                 <div class="col-xs-12 col-sm-6">
+
+                    <br>
+
                     <div class="box">
 
                         <!-- Important date card -->
                         <div class="card date-card d-flex flex-row">
                             <div class="datestamp small m-3">
                                 <span class="datestamp-month badge rounded-0">
-                                    <abbr title="November">Oct</abbr>
+                                    <abbr title="">Oct</abbr>
                                 </span>
                                 <span class="datestamp-day py-1">16</span><span class="sr-only">,</span>
                                 <span class="datestamp-year badge text-muted border-top border-grey">2021</span>
                             </div>
                             <div class="date-body border-left p-4">
 
-                                <h5 class="h5 font-weight-bold date-title mt-4 ">Camera-ready Deadline
+                                <h5 class="h5 font-weight-bold date-title mt-4">Camera-ready Deadline
                                 </h5>
                                 <!--- <div class="date-description">
 <p>Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Velit
@@ -454,11 +500,33 @@ egestas purus.</p>
                         </div>
                         <!-- Important date card -->
 
+
                     </div>
+
                 </div>
 
                 <div class="col-xs-12 col-sm-6">
+
+                    <div id="camera_ready_deadline" class="flipdown"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6">
+
+                    <br>
+
                     <div class="box">
+
                         <!-- Important date card -->
                         <div class="card date-card d-flex flex-row">
                             <div class="datestamp small m-3">
@@ -482,7 +550,15 @@ egestas purus.</p>
                         </div>
                         <!-- Important date card -->
 
+
                     </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+
+                    <div id="registration_deadline" class="flipdown"></div>
+
                 </div>
 
             </div>
@@ -512,7 +588,25 @@ egestas purus.</p>
 
 
 
+    <script src="flipdown/src/flipdown.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+
+            // Set up FlipDown
+            var flipdown = new FlipDown(1630038313, "submission_deadline").start() // Start the countdown
+            var flipdown2 = new FlipDown(1632716713, "result_notification").start() // Start the countdown
+            var flipdown3 = new FlipDown(1634358313, "camera_ready_deadline").start() // Start the countdown
+            var flipdown4 = new FlipDown(1635567913, "registration_deadline").start() // Start the countdown
+
+
+
+            // Show version number
+            var ver = document.getElementById('ver');
+            ver.innerHTML = flipdown.version;
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
