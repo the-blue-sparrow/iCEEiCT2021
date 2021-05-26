@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description"
+        content="The 5th International Conference on Electrical Engineering and Information & Communication Technology (iCEEiCT 2021) aims to bring together leading academic scientists, researchers, scholars to exchange and share their experiences, research results about all aspects of Electrical Engineering, ICT and discuss the practical challenges encountered and the solutions adopted." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/stylesheet.css"> -->
+    <title>Initial Paper Submission</title>
+</head>
+<style>
+    section {
+        padding-left: 12%;
+        padding-right: 12%;
+
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        .container-fluid {
+
+
+            background-image: url('images/template_footer_4.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+
+
+            display: block;
+
+        }
+
+
+        h2 {
+            font-size: 40px;
+            color: white;
+            padding-top: 70px;
+            height: 150px;
+            text-align: center;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container-fluid {
+
+            background-image: url('images/template.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+
+
+
+
+            display: block;
+
+        }
+
+        h2 {
+            font-size: 20px;
+            color: white;
+            padding-top: 18%;
+            padding-bottom: 5%;
+            text-align: center;
+            padding-left: 10px;
+
+        }
+
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #04012e;
+        color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 0;
+
+    }
+
+    .dropdown-content a {
+        color: white;
+
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    .dropdown-content a:hover {
+        background-color: white;
+        color: #04012e
+    }
+
+
+    .nav-item:hover .dropdown-content {
+        display: block;
+    }
+
+
+    ul {
+        list-style-type: none;
+
+        padding: 0px;
+    }
+
+   
+    .box {
+
+        padding: 20px 20px 20px 20px;
+
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+
+        position: relative;
+        overflow: hidden;
+        transition: all 0.25s;
+    }
+
+    .box:hover {
+
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+
+        position: relative;
+        overflow: hidden;
+        transition: all 0.25s;
+
+
+    }
+    li{
+        display:inline 
+    }
+</style>
+
+<body style="font-family: 'myfont'; ">
+    <div class="container-fluid" style="  display:block;">
+
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top"
+            style=" background-color: rgba(0, 0, 0, 0.449) ; padding-right:20px;height:80px">
+
+            <a rel="home" aria-current="page"><img width="200px" height="70" src="images/logo-01 (2).png"></a>
+            <!-- <a href="#" class="  custom-logo-item"
+                    rel="home" aria-current="page"><img width="170px" height="80" src="mujib logo001.png"
+                      ></a>  -->
+            <!-- <div class=".d-md-none .d-lg-block 	.d-lg-none .d-xl-block">
+                        
+                        <a href="http://ieeesmc2021.org/" class="custom-logo-link" rel="home" aria-current="page"><img width="50" height="50" src="logo2.jpeg" class="custom-logo" alt="IEEE SMC 2021" style=" margin-right:10px; "></a>  
+                    </div>
+                      
+                        <div class=".d-md-none .d-lg-block 	.d-lg-none .d-xl-block">
+                    
+                            <a href="http://ieeesmc2021.org/" class=" .d-sm-none .d-md-block custom-logo-link" rel="home" aria-current="page"><img width="50" height="50" src="1200px-Mujib_100_Logo.svg.png" class=" .d-sm-none .d-md-block custom-logo" alt="IEEE SMC 2021" style=" margin-right:10px; "></a>    </div>
+                            <div class=".d-md-none .d-lg-block 	.d-lg-none .d-xl-block">
+                            
+                            <a href="http://ieeesmc2021.org/" class=" .d-sm-none .d-md-block custom-logo-link" rel="home" aria-current="page"><img width="50" height="50" src="mist_logo.jpg" class=" .d-sm-none .d-md-block custom-logo" alt="IEEE SMC 2021" style=" margin-right:10px; "></a>  </div> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
+                style=" background-color:rgba(0, 157, 255, 0.204); ">
+                <span class="navbar-toggler-icon" style=" text-align:center"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="Navbar">
+
+
+                <ul class=" navbar-nav  ml-auto" style="text-align:center">
+
+                    <!--tips: to change the .nav alignment use .justify-content-center,.justify-content-end or use .flex-column to vertical alignment-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color:white;padding-top:20px; "><button
+                                class="button" style="width:80px"> <b>HOME
+                                </b></button>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white;padding-top:20px; "><button class="button"
+                                style="width:80px"> <b>ABOUT
+                                </b></button>
+
+                        </a>
+
+                        <div class="dropdown-content ">
+                            <a href="#">Welcome to ICEEICT 2021</a>
+                            <a href="#">About IEEICT</a>
+                            <a href="#">About MIST</a>
+                            <a href="keynotespeaker.html">Keynote Speaker</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" style="color:white;padding-top:20px  ">
+                            <button class="button"><b> COMMITTEE</b> </button>
+                        </a>
+                        <div class="dropdown-content ">
+                            <a href="#">International Advisory Committee</a>
+                            <a href="#">Local Advisory Committee</a>
+                            <a href="#">Organizing Committee</a>
+                            <a href="#">Technical Program Committee</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" style="color:white; padding-top:20px">
+                            <button class="button"><b>PROGRAM </b></button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Program Summary</a>
+                            <a href="#">General Technical Sessions</a>
+                            <a href="#">Special Technical Sessions</a>
+                            <a href="#">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" style="color:white;padding-top:20px  ">
+                            <button class="button"><b> AUTHORS </b> </button>
+                        </a>
+                        <div class="dropdown-content ">
+                            <a href="#">Call For Paper</a>
+                            <a href="#">Paper Submission</a>
+                            <a href="#">Paper Kit</a>
+                            <a href="#">No Show Policy</a>
+                            <a href="#">Important Dates</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" style="color:white; padding-top:20px">
+                            <button class="button"><b>AWARDS </b> </button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" style="color:white; padding-top:20px">
+                            <button class="button"><b>REGISTRATION </b> </button>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class=" .d-none .d-sm-none .d-md-block">
+                    <a href="shotoborsho.html" class=" .d-sm-none .d-md-block custom-logo-link" rel="home"
+                        aria-current="page"><img height="80" src="images/mujib logo001.png"
+                            class=" .d-sm-none .d-md-block custom-logo"></a>
+                </div>
+
+
+            </div>
+
+        </nav>
+        <h2><b>Camera Ready Submission</b></h2>
+    </div>
+    <section>
+        <div class="card">
+            <div class="card-header" style="background-color: #04012e;color:white; font-size:20px; font-family:myfont">
+            <h3  style="text-align:center;   ">Camera Ready Submission Guideline For ICEEICT 2021</h3>
+
+            </div>
+            <div class="card-body" style="font-family:myfont">
+                <p>Authors are requested to check the formatting of the paper prior to final submission. A paper will appear in the proceedings if at least one of the authors of accepted paper registers before the registration deadline and presents the paper (online). IEEE reserves the right to exclude an accepted paper from distribution after the conference, including exclusion from IEEE Xplore, if the submission does not meet IEEE standards for scope and/or quality. Articles excluded from further distribution shall be archived by IEEE but shall not be indexed or appear on IEEE Xplore.
+                    The final camera ready paper is due on <strong>December 7, 2021</strong>.</p>
+                    <p>Please follow the following steps to finalize the camera ready version of your paper:</p>
+                    <b><p>Final Manuscript Instructions</p></b>
+                    
+                 <div class="card-footer">
+                <div class="row">
+                       <div class="col-sm-4"  style=" background-color:rgba(245, 222, 179, 0.027)">
+                    <ul class="nav nav-pills justify-content-center " id="myTab" role="tablist" style="display:inline; ">
+                  
+                            <li class="nav-item active " style="color:black; ">
+                                <a href="#step1" class="nav-link active" id="step1-tab" data-toggle="tab"  role="tab" aria-controls="step1" aria-selected="true" style="color:black ;
+                      
+                               text-align: center;
+                              ">Final Paper Preparation</a>
+                            </li>
+                            
+                         
+                            <li class="nav-item" style="color:black; ">
+                                <a href="#step2" class="nav-link" id="step2-tab"  data-toggle="tab"  role="tab" aria-controls="step2" aria-selected="true"  style="color:black; 
+                             
+                                text-align: center;
+                              ">IEEE Xplore Compatibility of PDF File</a>
+                            </li>
+                       
+                           
+                            <li class="nav-item" style="color:black;">
+                                <a href="#step3" class="nav-link" id="step3-tab"  data-toggle="tab"  role="tab" aria-controls="step3" aria-selected="true" style="color:black; 
+                                text-align: center;
+                         "> IEEE Xplore Compatibility of PDF File</a>
+                            </li>
+                    
+                            
+                            <li class="nav-item" style="color:black; ">
+                                <a href="#step4" class="nav-link "  id="step4-tab" data-toggle="tab"   role="tab" aria-controls="step4" aria-selected="true" style="color:black;  
+                    
+                                text-align: center;
+                            ">Electronic IEEE Copyright Submission</a>
+                            </li>
+                   
+                          
+                            <li class="nav-item" style="color:black; ">
+                                <a href="#step5" class="nav-link" id="step5-tab"  data-toggle="tab"   role="tab" aria-controls="step5" aria-selected="true" style="color:black;  
+                       
+                                text-align: center;
+                              ">Registration</a>
+                            </li>
+                        
+                     
+                            <li class="nav-item" style="color:black; ">
+                        
+                                <a href="#step6" class="nav-link " id="step6-tab"  data-toggle="tab"  role="tab" aria-controls="step6" aria-selected="true" style="color:black; 
+                            
+                                text-align: center;"
+                             >Paper Presentation</a>
+                            </li>
+                         
+                      </ul>
+                      </div>
+                      <div class="col-sm">
+                        <div class="tab-content "  id="myTabContent" style="padding-top:10px; padding-bottom:10px">
+                            <div class="tab-pane  active" id="step1" role="tabpanel">
+                                <h4>Step 1: Final Paper Preparation</h4>
+                    
+                        You are requested to revise your manuscript carefully according to the comments of the reviewers and do thorough proofreading of the manuscript to confirm that it will require no revision.<br>
+                        Prepare your manuscript using the standard IEEE conference templates available via this link:  <a href="#">https://www.ieee.org</a></li>
+                
+                    <p>Similar to the initial submission, following criteria must be followed</p>
+                
+                    <ul>
+                        <li style="list-style: circle;
+                    ">1. Paper length: Maximum 4 pages including all figures, tables, and references</li>
+                    <br>
+                        <li style="list-style: circle;
+                    ">2. Allowable file size: 2 MB</li>
+                    <br>
+                        <li style="list-style: circle;
+                    ">3. Paper Size: US Letter or A4</li>
+                    <br>
+                        <li style="list-style: circle;
+                    ">4. At this stage, the authors must include their names, affiliations, postal addresses, and email addresses in the paper.</li>
+                    </ul>
+                    <p><b>Before Creating a PDF you must </b></p>
+                    <ul>
+                        <li>Add the following Copyright clearance code notice to the bottom left corner of the first page of your source document (MS Word or LaTeX).
+                         <strong>978-0-7381-1102-5/20/$31.00 ©2021 IEEE</strong></li>
+                        <li>Add the Title of the Conference (Exactly as shown below) on the top left corner of the first page of your manuscript
+                        <strong>2021 5th International Conference on Electrical Engineering And Information & Communication Technology (ICEEICT)</strong></li>
+                    </ul>
+                    <p><b>Please see the following example template</b></p>
+                    <p><a href="#">https://drive.google.com</a> for an illustration on where to insert the Copyright Clearance Code Notice and the Title of the Conference.</p>
+                    <p>Plagiarism and Multiple Submissions: ICEEICT 2021 will strictly follow <a href="#">IEEE policies for plagiarism and multiple submissions</a>.</p>
+                
+                            </div>
+                            <div class="tab-pane  " id="step2" role="tabpanel">
+                                <h4>Step 2: IEEE Xplore Compatibility of PDF File</h4>
+                                <p>Convert your paper from your source application format to Xplore-compatible PDF using IEEE PDF eXpress Plus. Note that you need to embed all fonts in your PDF file and type 3 fonts are not allowed. Please use the following website to convert your source files into an IEEE Xplore-compliant PDF file.</p>
+                                <p><a href="#">https://www.ieee.org</a></p>
+                                <p>(use conference ID <strong>000X</strong>)</p>
+                                <p>The first time you access the system, please follow the link to the new user. Please note that, in order to access the service, you need to allow the use of cookies from the PDF eXpress website. Once you have registered as a new user:</p>
+                                <ol>
+                                    <li>1. Upload the source file that contains your paper for conversion</li>
+                                    <br>
+                                    <li>2. Receive by email the IEEE Xplore-compatible PDF of your paper</li>
+                                </ol>
+                                <p>Please along with IEEE PDF eXpress compliant pdf file preserve a copy of the compliance message from PDF eXpress which needs to be uploaded during your registration.</p>
+                            </div>
+                            <div class="tab-pane " id="step3" role="tabpanel">
+                                <h4>Step 3: IEEE Xplore Compatibility of PDF File</h4>
+                                <p>Login to your Microsoft CMT Author system :</p>
+                                <p><a href="https://www.ieee.org">https://www.ieee.org</a></p>
+                                <p>Upload your final camera ready PDF file of the paper (Generated from IEEE PDF eXpress or Pass the PDF eXpress compliant check) by clicking the <strong>“Create Camera Ready Submission”</strong> field shown in <strong>“Actions”</strong> Column of the Author Console and submit your final camera ready through the system.</p>
+                                <p><b>Note:</b></p>
+                                <ul>
+                                    <li>1. All submissions must have no password protection on the PDF file, and all fonts must be embedded.</li><br>
+                                    <li>2. All submitted papers must be written in English.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane  " id="step4"  role="tabpanel">
+                                <h4>Step 4 : Electronic IEEE Copyright Submission</h4>
+                    <p>Login to your Microsoft CMT Author system :</p>
+                    <p><a href="https://www.ieee.org">https://www.ieee.org</a><br>
+                    Click on the <strong>“Submit the IEEE Copyright Form”</strong> Field shown in <strong>“Actions”</strong> Column of the Author Console. Follow the instruction of eCF to complete the e-Copyright submission. A PDF copyright document will be created and stored on the IEEE file system automatically. You will have the ability to download the document. The author or signer will also receive an attached copy of the copyright form in email. A copy of the copyright form needs to be uploaded during final camera ready submission as additional document.<br>
+                    Note: Transferring copyright is a necessary requirement for publishing your paper in IEEE Xplore.</p>
+                            </div>
+                            <div class="tab-pane  " id="step5" role="tabpanel">
+                                <h4>Step 5: Registration</h4>
+                                <p>Please check registration details at the <strong>conference website</strong> and do your registration in order to participate in the ICEEICT 2021. Authors are required to register and pay their registration fee by <strong>December 7, 2021</strong>.</p>
+                            </div>
+                            <div class="tab-pane  " id="step6" role="tabpanel">
+                                <h4>Step 6: Paper Presentation</h4>
+                                <p>It is expected that authors of registered papers will be presenting (online) during the conference period <strong>November 18-20 2021</strong> (similar to the face to face conference) and interact with other authors/speakers/guests during the entire conference. The technical program schedule will be updated to the conference website soon. We will try our best to make it a true virtual environment making options for networking parallel to technical sessions.</p>
+                                <p style="color: red;">In addition to the camera ready final pdf version of the paper, for smooth/uninterrupted operation the Full Virtual (online) conference, we need your <strong><a href="#" class="alert-danger">video presentation (MP4 format, maximum size is 100 MB)</a></strong> [powerpoint slides with your voice narration or recording voice narrated presentation via zoom]. We humbly request you to upload this presentation by <strong>December 7 2021</strong>, as instructed by the TPC. This file will be pre-screened by the TPC and we expect your cooperation in finalizing the presentation slides.</p>
+                                <p>On the day of the conference you will need to be present in your session and depending on the connectivity, mode of presentation will be finalized. I hope you understand the necessity of pre-loaded presentation in such a huge traffic condition. However, after the presentation, you are expected to answer the questions made by the Session Chairs and other participants. More detailed guidelines about the final presentation and joining the conference sessions will be available on the conference website.</p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    
+
+
+
+    <script>
+    
+        </script> 
+    </body>
+    </html>
